@@ -16,6 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
 final Controller = TextEditingController();
 
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -72,7 +73,7 @@ final Controller = TextEditingController();
 void putdata() async{
   var dio =Dio();
   var response = await dio.post("https://notaryapp-staging.herokuapp.com/customer/login",
-  data: {"email": "demo@thenotary.app"});
+  data: {"email": "companiesList"});
   print(response.statusCode);
   print(response.data.toString());
 
