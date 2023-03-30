@@ -73,7 +73,7 @@ final Controller = TextEditingController();
 void putdata() async{
   var dio =Dio();
   var response = await dio.post("https://notaryapp-staging.herokuapp.com/customer/login",
-  data: {"email": "companiesList"});
+  data: {"email": "demo@thenotary.app"});
   print(response.statusCode);
   print(response.data.toString());
 
